@@ -1,0 +1,52 @@
+{
+  "content": null,
+  "embeds": [
+    {
+      "title": "➜ Bildirimler",
+      "description": "🔴 - Canlı Yayın \n🟡 - Oyunlar",
+      "color": 2829617,
+      "image": {
+        "url": "https://i.ibb.co/kcQzk8b/Castle.png"
+      },
+      "thumbnail": {
+        "url": "https://em-content.zobj.net/source/microsoft-teams/337/bellhop-bell_1f6ce-fe0f.png"
+      }
+    },
+    {
+      "title": "➜ Oyun",
+      "description": "`⛏️` - Minecraft\n`🔫` - Call of Duty: MW II\n`🪂` - Call of Duty: Warzone 2\n`🩸` - Diablo 4",
+      "color": 2829617,
+      "image": {
+        "url": "https://i.ibb.co/4gvBJQ4/Ova.png"
+      },
+      "thumbnail": {
+        "url": "https://em-content.zobj.net/source/microsoft-teams/337/alien-monster_1f47e.png"
+      }
+    },
+    {
+      "title": "➜ Yaş",
+      "description": "🔴 - 12 veya daha küçük.\n🟡 - 13 ve 16 arası\n🟢 - 17 ve 20 arası\n🔵 - 21 ve 28 arası\n⚪️ - 29 veya daha büyük",
+      "color": 2829617,
+      "image": {
+        "url": "https://i.ibb.co/gWCfGXB/C-aml-k.png"
+      },
+      "thumbnail": {
+        "url": "https://em-content.zobj.net/source/microsoft-teams/337/old-man_1f474.png"
+      }
+    },
+    {
+      "title": "➜ İsimlik Rengi",
+      "description": "Discord sunucusunda isminizi istediğiniz renge boyayabilirsiniz. Renk körü kişiler, imleçlerini tepkilerin üzerinde bekleterek renkleri öğrenebilirler.",
+      "color": 2829617,
+      "image": {
+        "url": "https://i.ibb.co/KKtgQN0/C-o-l.png"
+      },
+      "thumbnail": {
+        "url": "https://em-content.zobj.net/source/microsoft-teams/337/artist-palette_1f3a8.png"
+      }
+    }
+  ],
+  "username": "╭",
+  "avatar_url": "https://i.ibb.co/37fpd1Q/1x1-00000000.png",
+  "attachments": []
+}
