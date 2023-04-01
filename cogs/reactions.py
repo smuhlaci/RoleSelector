@@ -50,11 +50,17 @@ class Reactions(commands.Cog):
 
     @commands.Cog.listener()
     async def on_raw_reaction_add(self, payload: RawReactionActionEvent):
+        if payload.user_id == self.bot.user.id:
+            return
+
         logging.info(payload)
         await self.process_reaction(payload, "add")
 
     @commands.Cog.listener()
     async def on_raw_reaction_remove(self, payload: RawReactionActionEvent):
+        if payload.user_id == self.bot.user.id:
+            return
+
         logging.info(payload)
         await self.process_reaction(payload, "remove")
 
