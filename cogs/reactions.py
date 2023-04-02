@@ -33,7 +33,8 @@ class Reactions(commands.Cog):
 
         message_data = reactions_table.get((data.message_id == str(payload.message_id)))
         reaction_data = [reaction for reaction in message_data['reactions'] if
-                         reaction['emoji'][0]['id'] == payload.emoji.id]
+                         (reaction['emoji'][0]['id'] is not None and reaction['emoji'][0]['id'] == payload.emoji.id) or
+                         (reaction['emoji'][0]['id'] is None and reaction['emoji'][0]['name'] == payload.emoji.name)]
         print(message_data)
         reactions_db.close()
 
