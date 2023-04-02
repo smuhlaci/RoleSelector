@@ -1,18 +1,12 @@
 import os
-from typing import Optional
-
 from dotenv import load_dotenv
-import discord
-from discord import ApplicationCommand
 import discord.ext.commands
 import logging
 
 logging.basicConfig(level=logging.INFO)
 
-
 load_dotenv()
 BOT_TOKEN = os.getenv('BOT_TOKEN')
-
 
 logging.getLogger('bot')
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
@@ -20,6 +14,8 @@ handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w'
 bot = discord.ext.commands.Bot(command_prefix='+', intents=discord.Intents.all())
 
 bot.load_extension('cogs.reactions')
+bot.load_extension('cogs.embed_sender')
+
 
 @bot.event
 async def on_ready():
