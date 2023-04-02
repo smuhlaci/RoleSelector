@@ -28,29 +28,31 @@ class Reactions(commands.Cog):
 
     async def process_reaction(self, payload: RawReactionActionEvent, r_type=None) -> None:
         reactions_db = TinyDB(DB_NAME)
-        reactions_table = reactions_db.table("reactions")
+        reactions_table = reactions_db.table("messages")
         data = Query()
 
-        reaction_data = reactions_table.get((data.message_id == payload.message_id) &
-                                            (data.reactions.emoji_id == payload.emoji.id))
+        message_data = reactions_table.get((data.message_id == str(payload.message_id)))
+        reaction_data = [reaction for reaction in message_data['reactions'] if
+                         reaction['emoji'][0]['id'] == payload.emoji.id]
+        print(message_data)
         reactions_db.close()
 
         if reaction_data is not None:
             guild = self.bot.get_guild(payload.guild_id)
             user = await guild.fetch_member(payload.user_id)
-            role_id = reaction_data.get('role_id')
+            role_id = reaction_data[0]['role_id']
             role = guild.get_role(role_id)
             if role is None:
-                self.logger.warning(f"Couldn't find a role with {role_id} ID but it contains in database."
-                                    f" Message ID: {payload.message_id} Emoji name: {payload.emoji.name}")
-                self.logger.warning("Not performing any action as result.")
+                logging.warning(f"Couldn't find a role with {role_id} ID but it contains in database."
+                                f" Message ID: {payload.message_id} Emoji name: {payload.emoji.name}")
+                logging.warning("Not performing any action as result.")
             elif r_type == "add":
                 await user.add_roles(role)
             elif r_type == "remove":
                 await user.remove_roles(role)
             else:
-                self.logger.warning("Invalid reaction type was provided in `process_reaction`.")
-                self.logger.warning("Not performing any action as result.")
+                logging.warning("Invalid reaction type was provided in `process_reaction`.")
+                logging.warning("Not performing any action as result.")
 
     @commands.Cog.listener()
     async def on_raw_reaction_add(self, payload: RawReactionActionEvent):
