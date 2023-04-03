@@ -32,6 +32,25 @@
       },
       "thumbnail": {
         "url": "https://em-content.zobj.net/source/microsoft-teams/337/old-man_1f474.png"
+      },
+      "interaction":{
+        "interaction_type":"select_menus",
+        "parameters":[
+          {
+            "label":">12",
+            "description":"12 veya daha küçük.",
+            "emoji":"\uD83D\uDFE1"
+          },
+          {
+            "label":"13-16",
+            "description":"13 ile 16 yaş arasında.",
+            "emoji":"\uD83D\uDD34"
+          },
+          {
+            "label":"17-20",
+            "description":"17 ile 20 yaş arasında.",
+            "emoji":"\uD83D\uDFE2"
+          }]
       }
     },
     {
