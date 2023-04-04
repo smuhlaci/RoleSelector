@@ -39,13 +39,13 @@
           {
             "label":"<=12",
             "description":"12 veya daha küçük.",
-            "emoji":"\uD83D\uDFE1",
+            "emoji":"\uD83D\uDD34",
             "role_id": "1089960196828307569"
           },
           {
             "label":"13-16",
             "description":"13 ile 16 yaş arasında.",
-            "emoji":"\uD83D\uDD34",
+            "emoji":"\uD83D\uDFE1",
             "role_id": "1089960280294961243"
           },
           {
@@ -57,14 +57,14 @@
           {
             "label":"21-28",
             "description":"21 ile 28 yaş arasında.",
-            "emoji":"\uD83D\uDD34",
-            "role_id": "1089960280294961243"
+            "emoji":"\uD83D\uDD35",
+            "role_id": "1089960350973165609"
           },
           {
             "label":">=29",
             "description":"29 yaşından büyük.",
-            "emoji":"\uD83D\uDFE2",
-            "role_id": "1089960317158686771"
+            "emoji":"⚪️",
+            "role_id": "1089960393931227214"
           }]
       }
     },
