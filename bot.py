@@ -15,7 +15,7 @@ bot = discord.ext.commands.Bot(command_prefix='+', intents=discord.Intents.all()
 
 bot.load_extension('cogs.reactions')
 bot.load_extension('cogs.embed_sender')
-# bot.load_extension('cogs.channel_builder')
+bot.load_extension('cogs.channel_builder')
 
 
 @bot.event

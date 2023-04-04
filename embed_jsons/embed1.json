@@ -34,22 +34,37 @@
         "url": "https://em-content.zobj.net/source/microsoft-teams/337/old-man_1f474.png"
       },
       "interaction":{
-        "interaction_type":"select_menus",
+        "interaction_type":"select_menu",
         "parameters":[
           {
-            "label":">12",
+            "label":"<=12",
             "description":"12 veya daha küçük.",
-            "emoji":"\uD83D\uDFE1"
+            "emoji":"\uD83D\uDFE1",
+            "role_id": "1089960196828307569"
           },
           {
             "label":"13-16",
             "description":"13 ile 16 yaş arasında.",
-            "emoji":"\uD83D\uDD34"
+            "emoji":"\uD83D\uDD34",
+            "role_id": "1089960280294961243"
           },
           {
             "label":"17-20",
             "description":"17 ile 20 yaş arasında.",
-            "emoji":"\uD83D\uDFE2"
+            "emoji":"\uD83D\uDFE2",
+            "role_id": "1089960317158686771"
+          },
+          {
+            "label":"21-28",
+            "description":"21 ile 28 yaş arasında.",
+            "emoji":"\uD83D\uDD34",
+            "role_id": "1089960280294961243"
+          },
+          {
+            "label":">=29",
+            "description":"29 yaşından büyük.",
+            "emoji":"\uD83D\uDFE2",
+            "role_id": "1089960317158686771"
           }]
       }
     },

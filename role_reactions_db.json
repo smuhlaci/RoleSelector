@@ -1,1 +1,27 @@
-{"messages": {}}
+{
+  "messages":{
+    "1":{
+      "message_id":"1092049590989107210",
+      "reactions":[
+        {
+          "emoji":[
+            {
+              "name":"\ud83d\udd34",
+              "id":null
+            }
+          ],
+          "role_id":1089959282969169950
+        },
+        {
+          "emoji":[
+            {
+              "name":"\ud83d\udfe1",
+              "id":null
+            }
+          ],
+          "role_id":1089962015558205530
+        }
+      ]
+    }
+  }
+}
